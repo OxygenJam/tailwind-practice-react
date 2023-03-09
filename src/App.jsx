@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './ui/Card';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <Card isRound={true}> This is a sample card</Card>
       </header>
     </div>
   );

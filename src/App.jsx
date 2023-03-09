@@ -2,23 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 import Card from './ui/Card';
 
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className='text-3xl font-bold underline'>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Card isRound={true}> This is a sample card</Card>
+        <label>Sample expirement with Tailwind.css</label>
+        <Card isRound={true}>{
+          [1,2,3,4].map((n) => {
+            return (
+            <Card isRound={true} tw='bg-black'>
+              <label>{n}</label>
+            </Card>);
+          })
+        }</Card>
       </header>
     </div>
   );

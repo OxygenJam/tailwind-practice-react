@@ -2,7 +2,7 @@
 
 export const ConfirmButton = (props) => {
     return (
-        <button className="text-white bg-green-500 focus:bg-green-700 focus:ring-2 focus:ring-green-500">
+        <button className={`text-white bg-green-500 focus:bg-green-700 focus:ring-2 focus:ring-green-500 ${props.className}`}>
             {props.children}
         </button>
     )
@@ -10,7 +10,7 @@ export const ConfirmButton = (props) => {
 
 export const CancelButton = (props) => {
     return (
-        <button className="text-white bg-red-500 focus:bg-red-700 focus:ring-2 focus:ring-red-500">
+        <button className={`text-white bg-red-500 focus:bg-red-700 focus:ring-2 focus:ring-red-500`}>
             {props.children}
         </button>
     )
